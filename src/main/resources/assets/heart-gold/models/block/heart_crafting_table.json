@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "heart-gold:block/heart_crafting_table_side",
+    "top": "heart-gold:block/heart_crafting_table_top"
+  }
+}

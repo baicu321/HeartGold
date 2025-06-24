@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:gold_block"
+    },
+    "X": {
+      "item":"minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XCX",
+    "XXX"
+  ],
+  "result": {
+    "item": "heart-gold:heart_crafting_table",
+    "count": 1
+  }
+}

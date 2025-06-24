@@ -1,0 +1,11 @@
+{
+  "item.heart-gold.heartgold": "哈尔特黄金",
+  "item.heart-gold.raw_heartgold": "粗制的哈尔特黄金",
+  "itemGroup.heartgold_group": "哈尔特黄金",
+  "block.heart-gold.heartgold_ore": "哈尔特黄金矿石",
+  "block.heart-gold.overflow_gold_ore": "溢到爆表的金矿石",
+  "block.heart-gold.overflow_deepslate_gold_ore": "溢到爆表的深层金矿石",
+  "block.heart-gold.heartgold_block": "哈尔特黄金块",
+  "block.heart-gold.heart_crafting_table": "哈尔特工作台",
+  "container.heart_crafting": "哈尔特工作台"
+}

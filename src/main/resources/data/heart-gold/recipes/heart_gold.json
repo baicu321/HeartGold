@@ -1,0 +1,12 @@
+{
+  "type": "heart-gold:heartcrafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heart-gold:heartgold_block"
+    }
+  ],
+  "result": {
+    "item": "heart-gold:heartgold",
+    "count": 25
+  }
+}
