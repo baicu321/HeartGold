@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class HeartCraftingTable extends BlockWithEntity {
-    private static final Text TITLIE = Text.translatable("container.heart_crafting");
 
     public HeartCraftingTable(AbstractBlock.Settings settings) {
         super(settings);
@@ -31,7 +30,7 @@ public class HeartCraftingTable extends BlockWithEntity {
         if (!world.isClient) {
             NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);
             if (screenHandlerFactory != null)
-                    player.openHandledScreen(screenHandlerFactory);
+                player.openHandledScreen(screenHandlerFactory);// 使用空文本作为标题
 ////            player.openHandledScreen(createScreenHandlerFactory(state,world, pos));
 //                player.openHandledScreen(new SimpleNamedScreenHandlerFactory((syncId, playerInventory, player1) -> new HeartCraftingScreenHandler(syncId,playerInventory),Text.translatable("container.heart_crafting")));
 //            player.incrementStat(Stats.INTERACT_WITH_CRAFTING_TABLE);

@@ -43,10 +43,20 @@ public class ModBlocks {
             "heartgold_block",
             new Block(AbstractBlock.Settings
                     .create()
-                    .mapColor(MapColor.STONE_GRAY)
+                    .mapColor(MapColor.GOLD)
                     .instrument(Instrument.BASEDRUM)
                     .requiresTool()
                     .strength(5.5F, 1200.0F)));
+    public static final Block HEART_PORTAL_BLOCK = register(//哈尔特传送门框架
+            "heart_portal_block",
+            new Block(AbstractBlock.Settings
+                    .create()
+                    .mapColor(MapColor.GOLD)
+                    .instrument(Instrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(5.5F,1200F)
+            )
+    );
     public static final Block HEART_CRAFTING_TABLE = register(//哈尔特工作台
             "heart_crafting_table",
             new HeartCraftingTable(FabricBlockSettings.create())

@@ -1,0 +1,22 @@
+{
+  "type": "heart-gold:heartcrafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    "XXXXX",
+    "XCCCX",
+    "XC CX",
+    "XCCCX",
+    "XXXXX"
+  ],
+  "result": {
+    "item": "heart-gold:heart_portal_block",
+    "count": 14
+  }
+}

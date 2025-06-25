@@ -17,7 +17,13 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class ModItems {
-    public static final Item HEART_GOLD = registerItems("heartgold",new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item HEART_GOLD = registerItems("heartgold",new Item(new Item.Settings().rarity(Rarity.EPIC)){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heart_gold"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
     public static final Item RAW_HEARTGOLD = registerItems("raw_heartgold",new Item(new Item.Settings()));
     public static final Item SINGULARITY = register("singularity", new SingularityItem());
     public static Item registerItems(String id, Item item) {

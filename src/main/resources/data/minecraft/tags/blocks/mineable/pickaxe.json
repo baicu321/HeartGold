@@ -4,6 +4,7 @@
     "heart-gold:heartgold_block",
     "heart-gold:heartgold_ore",
     "heart-gold:overflow_gold_ore",
-    "heart-gold:overflow_deepslate_gold_ore"
+    "heart-gold:overflow_deepslate_gold_ore",
+    "heart-gold:heart_portal_block"
   ]
 }

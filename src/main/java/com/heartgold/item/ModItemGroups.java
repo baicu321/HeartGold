@@ -28,12 +28,13 @@ public class ModItemGroups {
 
                         .entries(((displayContext, entries) -> {
                             entries.add(ModItems.HEART_GOLD );
+                            entries.add(ModBlocks.HEARTGOLD_BLOCK);
+                            entries.add(ModBlocks.HEART_PORTAL_BLOCK);
                             entries.add(ModItems.RAW_HEARTGOLD);
                             entries.add(ModBlocks.HEARTGOLD_ORE);
                             entries.add(ModBlocks.OVERFLOW_GOLD_ORE);
-                            entries.add(ModBlocks.HEARTGOLD_BLOCK);
-                            entries.add(ModBlocks.HEART_CRAFTING_TABLE);
                             entries.add(ModBlocks.OVERFLOW_DEEPSLATE_GOLD_ORE);
+                            entries.add(ModBlocks.HEART_CRAFTING_TABLE);
                         })).build()
                 );
 

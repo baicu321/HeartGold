@@ -2,6 +2,7 @@
   "replace":false,
   "values": [
     "heart-gold:heartgold_ore",
-    "heart-gold:heartgold_block"
+    "heart-gold:heartgold_block",
+    "heart-gold:heart_portal_block"
   ]
 }

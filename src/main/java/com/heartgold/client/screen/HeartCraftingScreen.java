@@ -26,14 +26,14 @@ public class HeartCraftingScreen extends HandledScreen<HeartCraftingScreenHandle
         titleY = 5;
     }
 protected void drawForeground(DrawContext context,int mouseX, int mouseY){
-        context.drawText(
-                this.textRenderer,
-                this.title,
-                this.titleX,
-                this.titleY,
-                0xFFD700,
-                false
-        );
+//        context.drawText(
+//                this.textRenderer,
+//                this.title,
+//                this.titleX,
+//                this.titleY,
+//                0xFFD700,
+//                false
+//        );
 }
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {

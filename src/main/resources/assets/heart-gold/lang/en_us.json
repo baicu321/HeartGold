@@ -6,6 +6,7 @@
   "block.heart-gold.overflow_gold_ore": "OverFlow Gold Ore",
   "block.heart-gold.overflow_deepslate_gold_ore": "Overflow Deepslate Gold Ore",
   "block.heart-gold.heartgold_block": "Block of HeartGold",
+  "block.heart-gold.heart_portal_block": "Block of HeartPortal",
   "block.heart-gold.heart_crafting_table": "Heart Crafting Table",
-  "container.heart_crafting": "Heart Crafting Table"
+  "tooltip.heartgold.heart_gold": "§7Faker.."
 }

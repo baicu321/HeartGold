@@ -25,7 +25,7 @@ public class HeartCraftingScreenHandler extends ScreenHandler {
         this.inventory = inventory;
         this.inventory.onOpen(playerInventory.player);
         this.addCraftingSlots(inventory);
-        this.addSlot(new OutputSlot(inventory, 25, 172, 70));
+        this.addSlot(new OutputSlot(inventory, 25, 191, 77));
         this.addPlayerInventory(playerInventory);
         this.addPlayerHotbar(playerInventory);
         this.inventory.markDirty();
@@ -65,7 +65,7 @@ public class HeartCraftingScreenHandler extends ScreenHandler {
         private void addPlayerInventory(PlayerInventory playerInventory){
                     for (int i = 0; i < 3; ++i)
                         for (int l = 0;l < 9; ++l)
-                            this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 29 + l * 18,158 + i * 18));
+                            this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 48 + l * 18,165 + i * 18));
 
         }
 public void onClosed(PlayerEntity player) {
@@ -76,12 +76,12 @@ public void onClosed(PlayerEntity player) {
 }
     private void addPlayerHotbar(PlayerInventory playerInventory) {
             for (int i =0;i<9;++i)
-                this.addSlot(new Slot(playerInventory, i ,29 + i*18,216));
+                this.addSlot(new Slot(playerInventory, i ,48 + i*18,223));
     }
     private void addCraftingSlots(Inventory inventory){
         for (int i =0; i<5;++i)
             for(int l =0;l<5;++l)
-                this.addSlot(new CraftingSlot(inventory,l + i*5,30+l*18,17+i *18));
+                this.addSlot(new CraftingSlot(inventory,l + i*5,49+l*18,24+i *18));
     }
 
             public void onSlotClick(int slotIndex, int button, SlotActionType actionType,PlayerEntity player){
