@@ -3,9 +3,7 @@ package com.heartgold.item;
 import com.heartgold.HeartGold;
 import net.minecraft.client.gui.tooltip.TooltipComponent;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -26,6 +24,26 @@ public class ModItems {
     });
     public static final Item RAW_HEARTGOLD = registerItems("raw_heartgold",new Item(new Item.Settings()));
     public static final Item SINGULARITY = register("singularity", new SingularityItem());
+    public static final Item HEARTGOLD_SWORD = registerItems("heartgold_sword" ,new SwordItem(ModToolMaterials.HEART_GOLD,
+            3,
+            -2.0F,
+            new Item.Settings()));
+    public static final Item HEARTGOLD_SHOVEL = registerItems("heartgold_shovel" ,new ShovelItem(ModToolMaterials.HEART_GOLD,
+            1.5F,
+            -2.0F,
+            new Item.Settings()));
+    public static final Item HEARTGOLD_PICKAXE = registerItems("heartgold_pickaxe" ,new PickaxeItem(ModToolMaterials.HEART_GOLD,
+            2,
+            -2.0F,
+            new Item.Settings()));
+    public static final Item HEARTGOLD_AXE = registerItems("heartgold_axe" ,new AxeItem(ModToolMaterials.HEART_GOLD,
+            6.0F,
+            -1.0F,
+            new Item.Settings()));
+    public static final Item HEARTGOLD_HOE = registerItems("heartgold_hoe" ,new HoeItem(ModToolMaterials.HEART_GOLD,
+            -4,
+            -2.0F,
+            new Item.Settings()));
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),new Identifier(HeartGold.MOD_ID,id)),item);
     }

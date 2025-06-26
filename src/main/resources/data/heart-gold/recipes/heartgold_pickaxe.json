@@ -1,0 +1,22 @@
+{
+  "type": "heart-gold:heartcrafting_shaped",
+  "key": {
+    "X": {
+      "item": "heart-gold:heartgold"
+    },
+    "C": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    " XXX ",
+    "X C X",
+    "  C  ",
+    "  C  ",
+    "  C  "
+  ],
+  "result": {
+    "item": "heart-gold:heartgold_pickaxe",
+    "count": 1
+  }
+}

@@ -1,6 +1,11 @@
 {
   "item.heart-gold.heartgold": "HeartGold",
   "item.heart-gold.raw_heartgold": "Raw HeartGold",
+  "item.heart-gold.heartgold_sword": "Heart Gold Sword",
+  "item.heart-gold.heartgold_pickaxe": "Heart Gold PickAxe",
+  "item.heart-gold.heartgold_axe": "Heart Gold Axe",
+  "item.heart-gold.heartgold_shovel": "Heart Gold Shovel",
+  "item.heart-gold.heartgold_hoe": "Heart Gold Hoe",
   "item.heart-gold.gold_water_bucket": "Liquefied Gold Bucket",
   "itemGroup.heartgold_group": "HeartGold",
   "block.heart-gold.heartgold_ore": "HeartGold Ore",
@@ -10,5 +15,9 @@
   "block.heart-gold.heart_portal_block": "Block of HeartPortal",
   "block.heart-gold.heart_crafting_table": "Heart Crafting Table",
   "block.heart-gold.gold_water_block":"Liquefied Gold",
-  "tooltip.heartgold.heart_gold": "§7Faker.."
+  "tooltip.heartgold.heart_gold": "§7Faker..",
+  "advancements.title.heart-crafting": "It's dazzling..",
+  "advancements.title.heart-portal": "A new dimension",
+  "advancements.Content.heart-portal": "Looks disgusting",
+  "advancements.Content.heart-crafting": "Now, you can make 5x5 stuff"
 }

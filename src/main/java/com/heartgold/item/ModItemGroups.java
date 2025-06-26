@@ -2,6 +2,7 @@ package com.heartgold.item;
 
 import com.heartgold.HeartGold;
 import com.heartgold.block.ModBlocks;
+import com.heartgold.fluid.ModFluids;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -35,6 +36,12 @@ public class ModItemGroups {
                             entries.add(ModBlocks.OVERFLOW_GOLD_ORE);
                             entries.add(ModBlocks.OVERFLOW_DEEPSLATE_GOLD_ORE);
                             entries.add(ModBlocks.HEART_CRAFTING_TABLE);
+                            entries.add(ModFluids.GOLD_WATER_BUCKET);
+                            entries.add(ModItems.HEARTGOLD_SWORD);
+                            entries.add(ModItems.HEARTGOLD_AXE);
+                            entries.add(ModItems.HEARTGOLD_PICKAXE);
+                            entries.add(ModItems.HEARTGOLD_SHOVEL);
+                            entries.add(ModItems.HEARTGOLD_HOE);
                         })).build()
                 );
 
