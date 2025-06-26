@@ -1,6 +1,7 @@
 {
   "item.heart-gold.heartgold": "哈尔特黄金",
   "item.heart-gold.raw_heartgold": "粗制的哈尔特黄金",
+  "item.heart-gold.gold_water_bucket": "液化金桶",
   "itemGroup.heartgold_group": "哈尔特黄金",
   "block.heart-gold.heartgold_ore": "哈尔特黄金矿石",
   "block.heart-gold.overflow_gold_ore": "溢到爆表的金矿石",
@@ -8,5 +9,6 @@
   "block.heart-gold.heartgold_block": "哈尔特黄金块",
   "block.heart-gold.heart_portal_block": "哈尔特传送门框架",
   "block.heart-gold.heart_crafting_table": "哈尔特工作台",
+  "block.heart-gold.gold_water_block":"液化金",
   "tooltip.heartgold.heart_gold": "§7冒牌货.."
 }

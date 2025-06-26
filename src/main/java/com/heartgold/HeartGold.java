@@ -1,6 +1,7 @@
 package com.heartgold;
 
 import com.heartgold.block.ModBlocks;
+import com.heartgold.fluid.ModFluids;
 import com.heartgold.item.ModItemGroups;
 import com.heartgold.item.ModItems;
 import com.heartgold.registry.HeartBlockEntitiles;
@@ -53,6 +54,7 @@ public class HeartGold implements ModInitializer {
 			HeartBlockEntitiles.init();
 			// 方块/物品注册...
 			ModItems.registerItems();
+			ModFluids.register();
 			ModItemGroups.registGroups();
 			ModBlocks.registerModBlocks();
 			BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,OVERFLOWGOLD);

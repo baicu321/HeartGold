@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/lava",
+  "textures": {
+    "particle": "heart-gold:block/gold_water_still"
+  }
+}

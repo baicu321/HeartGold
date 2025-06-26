@@ -1,6 +1,7 @@
 {
   "item.heart-gold.heartgold": "HeartGold",
   "item.heart-gold.raw_heartgold": "Raw HeartGold",
+  "item.heart-gold.gold_water_bucket": "Liquefied Gold Bucket",
   "itemGroup.heartgold_group": "HeartGold",
   "block.heart-gold.heartgold_ore": "HeartGold Ore",
   "block.heart-gold.overflow_gold_ore": "OverFlow Gold Ore",
@@ -8,5 +9,6 @@
   "block.heart-gold.heartgold_block": "Block of HeartGold",
   "block.heart-gold.heart_portal_block": "Block of HeartPortal",
   "block.heart-gold.heart_crafting_table": "Heart Crafting Table",
+  "block.heart-gold.gold_water_block":"Liquefied Gold",
   "tooltip.heartgold.heart_gold": "§7Faker.."
 }
