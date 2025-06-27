@@ -1,0 +1,26 @@
+{
+  "type": "heart-gold:heart",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "heart-gold:heart",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "preset": "minecraft:overworld",
+      "biomes": [
+        {
+          "biome": "heart-gold:heart",
+          "parameters": {
+            "temperature": 0.0,
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": 0.0,
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        }
+      ]
+    }
+  }
+}
