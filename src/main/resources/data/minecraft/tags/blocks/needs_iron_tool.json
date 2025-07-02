@@ -2,6 +2,7 @@
   "replace":false,
   "values": [
     "heart-gold:overflow_gold_ore",
-    "heart-gold:overflow_deepslate_gold_ore"
+    "heart-gold:overflow_deepslate_gold_ore",
+    "heart-gold:heart_crafting_table"
   ]
 }

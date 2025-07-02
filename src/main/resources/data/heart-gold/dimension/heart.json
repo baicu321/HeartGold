@@ -1,26 +1,25 @@
 {
-  "type": "heart-gold:heart",
+  "type": "heart-gold:heart_type",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 0,
-    "settings": "heart-gold:heart",
+    "settings": "heart-gold:heart_noise",
     "biome_source": {
       "type": "minecraft:multi_noise",
-      "preset": "minecraft:overworld",
       "biomes": [
         {
-          "biome": "heart-gold:heart",
+          "biome": "heart-gold:uncorroded_area",
           "parameters": {
-            "temperature": 0.0,
-            "humidity": 0.0,
-            "continentalness": 0.0,
-            "erosion": 0.0,
-            "weirdness": 0.0,
-            "depth": 0.0,
-            "offset": 0.0
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
           }
         }
-      ]
+      ],
+      "biome": "minecraft:deep_dark"
     }
   }
 }

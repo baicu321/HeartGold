@@ -12,8 +12,18 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.item.Items;
+import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -33,6 +43,7 @@ import java.awt.*;
 public class HeartGold implements ModInitializer {
 	public static final String MOD_ID = "heart-gold";
 
+
 	public static ScreenHandlerType<HeartCraftingScreenHandler> HEART_CRAFTING_HANDLER;
 	public static final RegistryKey<PlacedFeature> OVERFLOWGOLD = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"overflow_gold"));
 //			Registry.register(
@@ -45,11 +56,9 @@ public class HeartGold implements ModInitializer {
 //			);
 
 		public static final RegistryKey<DimensionType> HEART_TYPE =
-				RegistryKey.of(RegistryKeys.DIMENSION_TYPE,new Identifier("heart-gold","heart"));
+				RegistryKey.of(RegistryKeys.DIMENSION_TYPE,new Identifier("heart-gold","heart_type"));
 		public static final RegistryKey<World> HEART =
 			RegistryKey.of(RegistryKeys.WORLD, new Identifier("heart-gold", "heart"));
-
-
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 		@Override
 		public void onInitialize() {
@@ -64,20 +73,22 @@ public class HeartGold implements ModInitializer {
 			HeartRecipes.init();
 			HeartResourceManagers.register();
 			HeartBlockEntitiles.init();
-			// 方块/物品注册...
 			ModBlocks.registerModBlocks();
 			ModItems.registerItems();
 			ModFluids.register();
+			Registry.register(Registries.PARTICLE_TYPE, new Identifier("heart-gold", "dx_particle"), DX_PARTICLE);
 			ModItemGroups.registGroups();
-			CustomPortalBuilder.beginPortal()
+			CustomPortalBuilder.beginPortal()//自定义传送门api调用
 					.frameBlock(ModBlocks.HEART_PORTAL_BLOCK)
-					.lightWithItem(Items.GOLD_INGOT)
+					.lightWithItem(ModItems.FLINT_AND_GOLD)
 					.destDimID(Identifier.of("heart-gold","heart"))
-					.tintColor(255,128,0)
+					.tintColor(245, 255, 0)
 					.onlyLightInOverworld()
 					.registerPortal();
 			BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,OVERFLOWGOLD);
+
 		}
+	public static final DefaultParticleType DX_PARTICLE = FabricParticleTypes.simple();
 	}
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

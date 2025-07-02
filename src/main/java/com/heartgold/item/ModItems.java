@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ModItems {
   //  public static final Item AIR = register(Blocks.AIR, new AirBlockItem(Blocks.AIR, new Item.Settings()));
-    public static final Item HEART_GOLD = registerItems("heartgold",new Item(new Item.Settings().fireproof().rarity(Rarity.EPIC)){
+    public static final Item HEART_GOLD = registerItems("heartgold",new Item(new Item.Settings().fireproof()){//哈尔特黄金
         @Override
         public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
             tooltip.add(Text.translatable("tooltip.heartgold.heart_gold"));
@@ -27,27 +27,63 @@ public class ModItems {
         }
     });
     public static final Item SINGULARITY = register("singularity", new SingularityItem());
-    public static final Item RAW_HEARTGOLD = registerItems("raw_heartgold",new Item(new Item.Settings().fireproof()));
-    public static final Item HEARTGOLD_SWORD = registerItems("heartgold_sword" ,new HeartGoldSword(ModToolMaterials.HEART_GOLD,
+    public static final Item RAW_HEARTGOLD = registerItems("raw_heartgold",new Item(new Item.Settings().fireproof()));//粗制的哈尔特黄金
+    public static final Item FLINT_AND_GOLD = registerItems("flint_and_gold",new Item(new Item.Settings().maxDamage(64)){//打金石
+        @Override
+        public void appendTooltip(ItemStack stack,World world,List<Text> tooltip,TooltipContext context){
+            tooltip.add(Text.translatable("tooltip.heartgold.flint_and_gold"));
+        }
+    });
+    public static final Item HEARTGOLD_SWORD = registerItems("heartgold_sword" ,new HeartGoldSword(ModToolMaterials.HEART_GOLD,//哈尔特黄金剑
             4,
             -2.0F,
-            new Item.Settings().fireproof()));
-    public static final Item HEARTGOLD_SHOVEL = registerItems("heartgold_shovel" ,new ShovelItem(ModToolMaterials.HEART_GOLD,
+            new Item.Settings().fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heartgold_sword"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+    public static final Item HEARTGOLD_SHOVEL = registerItems("heartgold_shovel" ,new ShovelItem(ModToolMaterials.HEART_GOLD,//哈尔特黄金铲
             2.0F,
             -2.8F,
-            new Item.Settings().fireproof()));
-    public static final Item HEARTGOLD_PICKAXE = registerItems("heartgold_pickaxe" ,new PickaxeItem(ModToolMaterials.HEART_GOLD,
+            new Item.Settings().fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heartgold_shovel"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+    public static final Item HEARTGOLD_PICKAXE = registerItems("heartgold_pickaxe" ,new PickaxeItem(ModToolMaterials.HEART_GOLD,//哈尔特黄金镐
             2,
             -2.6F,
-            new Item.Settings().fireproof()));
-    public static final Item HEARTGOLD_AXE = registerItems("heartgold_axe" ,new HeartGoldAxe(ModToolMaterials.HEART_GOLD,
+            new Item.Settings().fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heartgold_pickaxe"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+    public static final Item HEARTGOLD_AXE = registerItems("heartgold_axe" ,new HeartGoldAxe(ModToolMaterials.HEART_GOLD,//哈尔特黄金斧
             10.0F,
             -3.5F,
-            new Item.Settings().fireproof()));
-    public static final Item HEARTGOLD_HOE = registerItems("heartgold_hoe" ,new HoeItem(ModToolMaterials.HEART_GOLD,
+            new Item.Settings().fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heartgold_axe"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+    public static final Item HEARTGOLD_HOE = registerItems("heartgold_hoe" ,new HoeItem(ModToolMaterials.HEART_GOLD,//哈尔特黄金锄
             -4,
             -0.0F,
-            new Item.Settings().fireproof()));
+            new Item.Settings().fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.heartgold.heartgold_hoe"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),new Identifier(HeartGold.MOD_ID,id)),item);
     }

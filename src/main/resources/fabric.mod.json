@@ -3,13 +3,13 @@
 	"id": "heart-gold",
 	"version": "${version}",
 	"name": "Heart Gold",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Another dimension of story",
 	"authors": [
-		"Me!"
+		"Cu6"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/baicu321/HeartGold"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/heart-gold/icon.png",

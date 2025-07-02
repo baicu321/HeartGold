@@ -42,6 +42,7 @@ public class ModItemGroups {
                             entries.add(ModItems.HEARTGOLD_PICKAXE);
                             entries.add(ModItems.HEARTGOLD_SHOVEL);
                             entries.add(ModItems.HEARTGOLD_HOE);
+                            entries.add(ModItems.FLINT_AND_GOLD);
                         })).build()
                 );
 

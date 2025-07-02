@@ -9,12 +9,18 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.BlockRenderManager;
+import net.minecraft.client.render.entity.MobEntityRenderer;
+import net.minecraft.registry.Registry;
+import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.util.Identifier;
 
 import java.lang.reflect.Field;
@@ -23,12 +29,12 @@ import java.lang.reflect.Field;
 public class HeartGoldClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-
         HeartScreenHandlers.registerAllScreenHandlers();
         HeartResourceManagers.registerClient();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HEART_CRAFTING_TABLE, RenderLayer.getCutout());
 //        ScreenRegistry.register(HeartGold.HEART_CRAFTING_HANDLER, HeartCraftingScreen::new);
         HandledScreens.register(HeartGold.HEART_CRAFTING_HANDLER, HeartCraftingScreen::new);
+        ParticleFactoryRegistry.getInstance().register(HeartGold.DX_PARTICLE, FlameParticle.Factory::new);
 //        HandledScreens.register(
 //                HeartGold.HEART_CRAFTING_HANDLER,
 //                HeartCraftingScreen::new

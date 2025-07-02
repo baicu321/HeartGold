@@ -68,7 +68,7 @@ public class ModBlocks {
     );
     public static final Block HEART_CRAFTING_TABLE = register(//哈尔特工作台
             "heart_crafting_table",
-            new HeartCraftingTable(FabricBlockSettings.create()),
+            new HeartCraftingTable(FabricBlockSettings.create().requiresTool().strength(4.0F,7.0F)),
             true
             );
 
