@@ -10,9 +10,9 @@
   },
   "pattern": [
     "XXXXX",
+    "XXCXX",
     "XCCCX",
-    "XC CX",
-    "XCCCX",
+    "XXCXX",
     "XXXXX"
   ],
   "result": {

@@ -2,6 +2,9 @@ package com.heartgold.item;
 
 import com.heartgold.HeartGold;
 import com.heartgold.block.ModBlocks;
+import com.heartgold.entity.ModEntities;
+import com.heartgold.entity.custom.GoldPigEntity;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.tooltip.TooltipComponent;
@@ -66,7 +69,7 @@ public class ModItems {
     });
     public static final Item HEARTGOLD_AXE = registerItems("heartgold_axe" ,new HeartGoldAxe(ModToolMaterials.HEART_GOLD,//哈尔特黄金斧
             10.0F,
-            -3.5F,
+            -3.4F,
             new Item.Settings().fireproof()){
         @Override
         public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
@@ -84,9 +87,11 @@ public class ModItems {
             super.appendTooltip(stack, world, tooltip, context);
         }
     });
+    public static final Item GOLDPIG_SPAWN_EGG = registerItems("goldpig_spawn_egg",new SpawnEggItem(ModEntities.GOLDPIG,16638035,15375368,new Item.Settings()));//金猪刷怪蛋
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),new Identifier(HeartGold.MOD_ID,id)),item);
     }
+    public static final Item GOLDPORKCHOP = registerItems("gold_pork_chop",new Item(new FabricItemSettings().food(ModFoodComponents.GOLDPORKCHOP)));
 public static Item register(String id, Item item) {
     return register(new Identifier(HeartGold.MOD_ID), item);
 }

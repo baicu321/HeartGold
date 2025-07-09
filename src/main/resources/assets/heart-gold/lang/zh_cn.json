@@ -8,7 +8,11 @@
   "item.heart-gold.heartgold_shovel": "哈尔特金铲",
   "item.heart-gold.heartgold_hoe": "哈尔特金锄",
   "item.heart-gold.gold_water_bucket": "液化金桶",
+  "item.heart-gold.gold_pork_chop": "金猪排",
+  "item.heart-gold.goldpig_spawn_egg": "金猪刷怪蛋",
   "itemGroup.heartgold_group": "哈尔特黄金",
+  "itemGroup.heartgold_group1": "哈尔特黄金:刷怪蛋",
+  "block.customportalapi.customportalblock": "哈尔特传送门",
   "block.heart-gold.heartgold_ore": "哈尔特黄金矿石",
   "block.heart-gold.overflow_gold_ore": "溢到爆表的金矿石",
   "block.heart-gold.overflow_deepslate_gold_ore": "溢到爆表的深层金矿石",
@@ -26,5 +30,8 @@
   "advancements.title.heart-crafting": "真是耀眼..",
   "advancements.title.heart-portal": "新的维度",
   "advancements.Content.heart-portal": "试试做一个和下界传送门一样的结构",
-  "advancements.Content.heart-crafting": "现在,你可以制作5x5的东西了"
+  "advancements.Content.heart-crafting": "现在,你可以制作5x5的东西了",
+  "biome.heart-gold.uncorroded_area": "净土",
+  "entity.heart-gold.goldpig": "金猪",
+  "emi.category.heart-gold.heart_crafting": "哈尔特工作台"
 }

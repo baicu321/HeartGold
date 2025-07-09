@@ -11,6 +11,15 @@ base {
 }
 
 repositories {
+
+
+	repositories {
+		maven {
+			name = "TerraformersMC"
+			url = "https://maven.terraformersmc.com"
+		}
+	}
+
 	maven {url = "https://maven.kyrptonaught.dev"}
 }
 	// Add repositories to retrieve artifacts from in here.
@@ -31,9 +40,11 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+//	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
+	modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
 	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta65-1.20'
 	include 'net.kyrptonaught:customportalapi:0.0.1-beta65-1.20'
 

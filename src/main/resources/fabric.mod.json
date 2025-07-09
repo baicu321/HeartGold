@@ -11,12 +11,15 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/baicu321/HeartGold"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/heart-gold/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.heartgold.HeartGold"
+		],
+		"emi": [
+			"com.heartgold.conpact.emi.HeartCraftingRecipePlugin"
 		],
 		"client": [
 			"com.heartgold.HeartGoldClient"

@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    " XXX ",
-    " XXX ",
-    "  C  ",
-    "  C  ",
-    "  C  "
+    "   XX",
+    "  XXX",
+    "  CX ",
+    " C   ",
+    "C    "
   ],
   "result": {
     "item": "heart-gold:heartgold_shovel",

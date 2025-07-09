@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    "XXX  ",
-    "XXC  ",
-    "X C  ",
-    "  C  ",
-    "  C  "
+    "  XX ",
+    " XXC ",
+    " XCCX",
+    " C XX",
+    "C    "
   ],
   "result": {
     "item": "heart-gold:heartgold_axe",

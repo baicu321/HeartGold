@@ -8,7 +8,11 @@
   "item.heart-gold.heartgold_shovel": "Heart Gold Shovel",
   "item.heart-gold.heartgold_hoe": "Heart Gold Hoe",
   "item.heart-gold.gold_water_bucket": "Liquefied Gold Bucket",
+  "item.heart-gold.gold_pork_chop": "Gold Porkchop",
+  "item.heart-gold.goldpig_spawn_egg": "Gold Pig Spawn Egg",
   "itemGroup.heartgold_group": "HeartGold",
+  "itemGroup.heartgold_group1": "HeartGold:Spawn Eggs",
+  "block.customportalapi.customportalblock": "Heart Portal",
   "block.heart-gold.heartgold_ore": "HeartGold Ore",
   "block.heart-gold.overflow_gold_ore": "OverFlow Gold Ore",
   "block.heart-gold.overflow_deepslate_gold_ore": "Overflow Deepslate Gold Ore",
@@ -26,5 +30,8 @@
   "advancements.title.heart-crafting": "It's dazzling..",
   "advancements.title.heart-portal": "A new dimension",
   "advancements.Content.heart-portal": "Try to make a structure similar to the Nether portal.",
-  "advancements.Content.heart-crafting": "Now, you can make 5x5 stuff"
+  "advancements.Content.heart-crafting": "Now, you can make 5x5 stuff",
+  "biome.heart-gold.uncorroded_area": "Uncorroded Area",
+  "entity.heart-gold.goldpig": "Gold Pig",
+  "emi.category.heart-gold.heart_crafting": "Heart Crafting Table"
 }

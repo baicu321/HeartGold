@@ -10,10 +10,10 @@
   },
   "pattern": [
     " XXX ",
-    "X C X",
-    "  C  ",
-    "  C  ",
-    "  C  "
+    "   XX",
+    "  C X",
+    " C  X",
+    "C    "
   ],
   "result": {
     "item": "heart-gold:heartgold_pickaxe",

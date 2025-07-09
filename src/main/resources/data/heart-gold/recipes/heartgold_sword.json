@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    "  X  ",
-    "  X  ",
-    "  X  ",
-    " CXC ",
-    "  C  "
+    "   XX",
+    "  XCX",
+    "XXCX ",
+    " XX  ",
+    "C X  "
   ],
   "result": {
     "item": "heart-gold:heartgold_sword",

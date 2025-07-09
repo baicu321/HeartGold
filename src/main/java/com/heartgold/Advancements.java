@@ -43,7 +43,6 @@ public class Advancements implements Consumer<Consumer<Advancement>> {
                         true,
                         false
                 )
-                .rewards(AdvancementRewards.Builder.experience(1000))
                 .criterion("got_heart_portal_block", InventoryChangedCriterion.Conditions.items(ModBlocks.HEART_PORTAL_BLOCK))
                 .build(consumer, HeartGold.MOD_ID + "/got_heart_portal_block");
 

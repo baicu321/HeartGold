@@ -1,6 +1,8 @@
 package com.heartgold;
 
 import com.heartgold.block.ModBlocks;
+import com.heartgold.entity.ModEntities;
+import com.heartgold.entity.custom.GoldPigEntity;
 import com.heartgold.fluid.ModFluids;
 import com.heartgold.item.ModItemGroups;
 import com.heartgold.item.ModItems;
@@ -72,6 +74,7 @@ public class HeartGold implements ModInitializer {
 			);
 			HeartRecipes.init();
 			HeartResourceManagers.register();
+			FabricDefaultAttributeRegistry.register(ModEntities.GOLDPIG, GoldPigEntity.createGoldPigAttributes());
 			HeartBlockEntitiles.init();
 			ModBlocks.registerModBlocks();
 			ModItems.registerItems();

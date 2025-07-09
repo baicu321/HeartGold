@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    " XX  ",
-    "X C  ",
-    "  C  ",
-    "  C  ",
-    "  C  "
+    "     ",
+    "   XX",
+    "  C X",
+    " C  X",
+    "C    "
   ],
   "result": {
     "item": "heart-gold:heartgold_hoe",

@@ -13,7 +13,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final RegistryKey<ItemGroup> HEARTGOLDGROUP = register("heartgold_group");
+    public static final RegistryKey<ItemGroup> HEARTGOLDGROUP = register("heartgold_group");//物品
+    public static final RegistryKey<ItemGroup> HEARTGOLDGROUP1 = register("heartgold_group1");//生物刷怪蛋
 
     private static RegistryKey<ItemGroup> register(String id){
         return RegistryKey.of(RegistryKeys.ITEM_GROUP,new Identifier(HeartGold.MOD_ID,id));
@@ -43,8 +44,22 @@ public class ModItemGroups {
                             entries.add(ModItems.HEARTGOLD_SHOVEL);
                             entries.add(ModItems.HEARTGOLD_HOE);
                             entries.add(ModItems.FLINT_AND_GOLD);
+                            entries.add(ModItems.GOLDPORKCHOP);
                         })).build()
                 );
+
+                Registry.register(
+                        Registries.ITEM_GROUP,
+                        HEARTGOLDGROUP1,
+                        ItemGroup.create(null,-1)
+                                .displayName(Text.translatable("itemGroup.heartgold_group1"))
+                                .icon(()->new ItemStack(ModItems.GOLDPIG_SPAWN_EGG))
+
+                                .entries(((displayContext, entries) -> {
+                                   entries.add(ModItems.GOLDPIG_SPAWN_EGG);
+
+                                })).build()
+                                );
 
     }
 }

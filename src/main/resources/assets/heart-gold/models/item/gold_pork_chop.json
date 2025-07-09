@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "heart-gold:item/gold_pork_chop"
+  }
+}
