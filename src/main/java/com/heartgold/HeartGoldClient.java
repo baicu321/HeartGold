@@ -3,9 +3,7 @@ package com.heartgold;
 import com.heartgold.block.ModBlocks;
 import com.heartgold.client.screen.HeartCraftingScreen;
 import com.heartgold.entity.ModEntities;
-import com.heartgold.entity.client.GoldPigModel;
-import com.heartgold.entity.client.GoldPigRenderer;
-import com.heartgold.entity.client.ModModelLayers;
+import com.heartgold.entity.client.*;
 import com.heartgold.fluid.ModFluids;
 import com.heartgold.registry.HeartResourceManagers;
 import com.heartgold.registry.HeartScreenHandlers;
@@ -37,6 +35,8 @@ public class HeartGoldClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GOLDPIG, GoldPigModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.GOLDPIG, GoldPigRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SAND_HAND, SandHandModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.SAND_HAND,SandHandRenderer::new);
         HeartScreenHandlers.registerAllScreenHandlers();
         HeartResourceManagers.registerClient();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HEART_CRAFTING_TABLE, RenderLayer.getCutout());

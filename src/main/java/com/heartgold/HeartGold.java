@@ -3,6 +3,7 @@ package com.heartgold;
 import com.heartgold.block.ModBlocks;
 import com.heartgold.entity.ModEntities;
 import com.heartgold.entity.custom.GoldPigEntity;
+import com.heartgold.entity.custom.SandHandEntity;
 import com.heartgold.fluid.ModFluids;
 import com.heartgold.item.ModItemGroups;
 import com.heartgold.item.ModItems;
@@ -48,15 +49,6 @@ public class HeartGold implements ModInitializer {
 
 	public static ScreenHandlerType<HeartCraftingScreenHandler> HEART_CRAFTING_HANDLER;
 	public static final RegistryKey<PlacedFeature> OVERFLOWGOLD = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(MOD_ID,"overflow_gold"));
-//			Registry.register(
-//					Registries.SCREEN_HANDLER,
-//					new Identifier(MOD_ID, "HeartGoldScreen"),
-//					new ScreenHandlerType<>(HeartCraftingScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES)
-////					new ExtendedScreenHandlerType<>
-////							new HeartCraftingScreenHandler(syncId, inv, ScreenHandlerContext.EMPTY)
-//					);
-//			);
-
 		public static final RegistryKey<DimensionType> HEART_TYPE =
 				RegistryKey.of(RegistryKeys.DIMENSION_TYPE,new Identifier("heart-gold","heart_type"));
 		public static final RegistryKey<World> HEART =
@@ -74,7 +66,7 @@ public class HeartGold implements ModInitializer {
 			);
 			HeartRecipes.init();
 			HeartResourceManagers.register();
-			FabricDefaultAttributeRegistry.register(ModEntities.GOLDPIG, GoldPigEntity.createGoldPigAttributes());
+			ModEntities.register();
 			HeartBlockEntitiles.init();
 			ModBlocks.registerModBlocks();
 			ModItems.registerItems();
@@ -89,7 +81,6 @@ public class HeartGold implements ModInitializer {
 					.onlyLightInOverworld()
 					.registerPortal();
 			BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,OVERFLOWGOLD);
-
 		}
 	public static final DefaultParticleType DX_PARTICLE = FabricParticleTypes.simple();
 	}

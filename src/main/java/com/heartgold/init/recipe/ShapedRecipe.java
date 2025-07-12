@@ -1,6 +1,7 @@
 package com.heartgold.init.recipe;
 
 import com.google.gson.JsonObject;
+import com.heartgold.HeartGold;
 import com.heartgold.util.RecipeUtil;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
@@ -24,7 +25,6 @@ public record ShapedRecipe(
         ItemStack output,       // 合成输出物品
         List<List<Ingredient>> recipeItems // 5x5配方材料矩阵（行优先存储）
 ) implements Recipe<SimpleInventory> {
-
     /**
      * 检查两个二维列表的维度是否不同
      * @param first 第一个二维列表
